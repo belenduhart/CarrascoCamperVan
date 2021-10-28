@@ -1,0 +1,101 @@
+// // Seccion donde se selecciona el trabajo que se quiere ver
+@import "../abstract/transform";
+
+.contenidosautoscontainer{
+    width: 100%;
+}
+    .titulotrabajocontainer{
+        width: 80%;
+        margin: 3vh auto;
+        @media only screen and (max-width:480px) {
+            width: 90%;
+        }
+        img{
+            width: 100%;
+            box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgb(0 0 0 / 36%);   
+        }
+    }
+    .selecciondetrabajocontainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 7vh auto;
+        flex-wrap: wrap;
+        @media only screen and (max-width:480px) {
+            flex-direction: column;
+            width: 80%;
+            margin: 1vh 8vw;
+        }
+        .trabajoseleccionado{
+            width: 20%;
+            height: 33vh;
+            margin: 1vh 0.5vw 1vh 0.5vw;
+            display: flex;
+            &:hover .vehiculo{
+                visibility:visible;
+                transform: scale(1.1);
+                transition: all 500ms ease;
+                animation-duration: 700ms;
+                animation-name: slidein;
+                @keyframes slidein{
+                    from {
+                        height: 0%;
+                       opacity: 0%;
+                      }
+                      to {
+                        height: 100%;
+                        opacity: 100%;
+                      }
+                }
+            }
+            @media only screen and (min-width: 480px) and (max-width:940px) {
+                height: 20vh;
+            }
+            @media only screen and (max-width:480px) {
+                width: 60%;
+                height: 24vh;
+            }
+            &:hover img{
+                filter: grayscale(0);
+            }
+            @media only screen and (min-width: 940px) and (max-width:1020px) {
+                height: 23vh;
+            }
+            img{
+                width:100%;
+                filter: grayscale(70%);
+                border-radius: 10%;
+                box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgb(0 0 0 / 36%);
+            }
+            .vehiculo{
+                visibility: hidden;
+                width: 102%;
+                // background-color: #734d3fa8;
+                border-radius: 100%;
+                font-size: 1.3em;
+                color: black;
+                font-weight: bold;
+                margin-left: -19vw;
+                text-align: center;
+                text-decoration: overline;
+                line-height: 58vh;
+                @media only screen and (min-width: 580px) and (max-width:940px) {
+                    font-size: 0.9em;
+                    line-height: 33vh;
+                }
+                @media only screen and (min-width: 480px) and (max-width:580px) {
+                    font-size: 0.8em;
+                    line-height: 33vh;
+                }
+                @media only screen and (max-width:480px) {
+                margin-left: -45vw;
+                line-height: 42vh;
+                }
+                @media only screen and (min-width: 940px) and (max-width:1020px) {
+                    line-height: 51vh;
+                }
+            }
+        }
+    }

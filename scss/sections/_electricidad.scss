@@ -1,0 +1,31 @@
+// Seccion electricidad
+.electricidadcontenidocontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .electricidaddescripcion{
+        font-size: 1.5em;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        @media only screen and (min-width:480px) and (max-width:780px){
+            font-size: 1em;
+        } 
+        @media only screen and (max-width:480px){
+            font-size: 0.8em;
+            margin-top: 1vh;
+        }
+    }
+}
+
+// PANELES SOLARES
+@import "../partials/panelessolares";
+// REGULADORES
+@import "../partials/reguladores";
+// BATERIAS
+@import "../partials/baterias";
+
+  
+
+  

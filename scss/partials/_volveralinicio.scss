@@ -1,0 +1,15 @@
+#volveralinicio{
+    .cara{
+        position: sticky;
+        top: 80px;
+        margin-top: -15vh;
+        left: 92vw;
+        @media only screen and (max-width:780px) {
+            display: none;
+        }
+        img{
+            width: 5vw;
+            margin-top: -18vh;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+// Index 
+// H1 hidden en todas las paginas
+.hidden{
+    display: none;
+}
+// Header
+@import "../sections/header";
+// Navbar index
+@import "../partials/navbarindex";
+// Sobre Nosotros index
+@import "../sections/nosotros";
+// Nuestros Trabajos index
+@import "../sections/trabajos";
+// Accesorios index
+@import "../sections/accesoriosindex";
+// Contacto index
+@import "../sections/contacto";
+// Footer igual en todas las paginas
+@import "../sections/footer";

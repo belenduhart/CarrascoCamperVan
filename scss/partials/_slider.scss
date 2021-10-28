@@ -1,0 +1,314 @@
+
+
+
+// SLIDER 0 PAGINA AUTOS / CAMIONETAS
+
+     .slider {
+          display: grid;
+          grid-template-rows: repeat(2, 15vh);
+          grid-template-columns: repeat(2, 23vw);
+          transition: all $time ease(gravity);
+          background-color: #fdfdfd80;
+          box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgb(0 0 0 / 36%);
+          border-radius: 10px;
+          padding: 0.25em;
+          cursor: zoom-in;
+          @media (min-width: 40em) {
+                grid-template-columns: repeat(2, 20vw);
+                grid-template-rows: repeat(2, 20vh);
+          }
+          @media (min-width: 60em) {
+                grid-template-columns: repeat(4, 13vw);
+                grid-template-rows: repeat(1, 20vh);
+          }
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        transition: all 225ms ease-in-out;
+                        position: relative;
+                        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgb(0 0 0 / 36%);
+                        // opacity: 0.67;
+                        filter: sepia(80%) hue-rotate(180deg);
+                        &:first-child {
+                            border-radius: 10px 10px 0 0;
+                        }
+                        &:last-child {
+                            border-radius: 0 0 10px 10px;
+                        }
+                        &:hover {
+                            opacity: 1;
+                            z-index: 1;
+                            box-shadow: 1em 1em 1em #0004;
+                            transition: all $time ease-in-out;
+                            filter: sepia(0%) hue-rotate(0deg);
+                            border-radius: 5px;
+                            width: 300%;
+                            height: 300%;
+                            left: -100%;
+                            top: -100%;
+                            @media (min-width: 40em) {
+                                width: 250%;
+                                height: 500%;
+                                left: -75%;
+                                top: -200%;
+                            }
+                            @media (min-width: 40em) and (orientation: portrait) {
+                                width: 300%;
+                                height: 300%;
+                                left: -100%;
+                                top: -100%;
+                            }
+                            @media (min-width: 60em) {
+                                width: 350%;
+                                height: 150%;
+                                left: -75%;
+                                top: -25%;
+                                    ~ img {
+                                        left: 175%;
+                                    }
+                            }
+                            @media (min-width: 60em) and (orientation: landscape) {
+                                width: 300%;
+                                height: 300%;
+                                left: -75%;
+                                top: -100%;
+                                    ~ img {
+                                        left: 100%;
+                                    }
+                            }
+                        }
+                        @media (min-width: 40em) and (max-width: 59.99em) {
+                            &:first-child {
+                                border-radius: 10px 0 0 0;
+                            }
+                            &:nth-child(5) {
+                                border-radius: 0 10px 0 0;
+                            }
+                            &:nth-child(6) {
+                                border-radius: 0 0 10px 0;
+                            }
+                            &:last-child {
+                                border-radius: 0 0 0 10px;
+                            }
+                        }
+                        @media (min-width: 60em) {
+                            &:first-child {
+                                border-radius: 10px 0 0 10px;
+                            }
+                            &:last-child {
+                                border-radius: 0 10px 10px 0;
+                            }
+                  }
+                }
+    }
+
+// SLIDER 1 PAGINA CAMIONETAS
+
+.slider1 {
+    display: grid;
+    grid-template-rows: repeat(3, 15vh);
+    grid-template-columns: repeat(2, 23vw);
+    transition: all $time ease(gravity);
+    background-color: #fdfdfd80;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgb(0 0 0 / 36%);
+    border-radius: 10px;
+    padding: 0.25em;
+    cursor: zoom-in;
+    @media (min-width: 40em) {
+          grid-template-columns: repeat(3, 20vw);
+          grid-template-rows: repeat(2, 20vh);
+    }
+    @media (min-width: 60em) {
+          grid-template-columns: repeat(5, 13vw);
+          grid-template-rows: 25vh;
+    }
+              img {
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  left: 0;
+                  top: 0;
+                  transition: all 225ms ease-in-out;
+                  position: relative;
+                  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgb(0 0 0 / 36%);
+                  // opacity: 0.67;
+                  filter: sepia(80%) hue-rotate(180deg);
+                  &:first-child {
+                      border-radius: 10px 10px 0 0;
+                  }
+                  &:last-child {
+                      border-radius: 0 0 10px 10px;
+                  }
+                  &:hover {
+                      opacity: 1;
+                      z-index: 1;
+                      box-shadow: 1em 1em 1em #0004;
+                      transition: all $time ease-in-out;
+                      filter: sepia(0%) hue-rotate(0deg);
+                      border-radius: 5px;
+                      width: 300%;
+                      height: 300%;
+                      left: -100%;
+                      top: -100%;
+                      @media (min-width: 40em) {
+                          width: 250%;
+                          height: 500%;
+                          left: -75%;
+                          top: -200%;
+                      }
+                      @media (min-width: 40em) and (orientation: portrait) {
+                          width: 300%;
+                          height: 300%;
+                          left: -100%;
+                          top: -100%;
+                      }
+                      @media (min-width: 60em) {
+                          width: 350%;
+                          height: 150%;
+                          left: -75%;
+                          top: -25%;
+                              ~ img {
+                                  left: 175%;
+                              }
+                      }
+                      @media (min-width: 60em) and (orientation: landscape) {
+                          width: 300%;
+                          height: 300%;
+                          left: -75%;
+                          top: -100%;
+                              ~ img {
+                                  left: 100%;
+                              }
+                      }
+                  }
+                  @media (min-width: 40em) and (max-width: 59.99em) {
+                      &:first-child {
+                          border-radius: 10px 0 0 0;
+                      }
+                      &:nth-child(5) {
+                          border-radius: 0 10px 0 0;
+                      }
+                      &:nth-child(6) {
+                          border-radius: 0 0 10px 0;
+                      }
+                      &:last-child {
+                          border-radius: 0 0 0 10px;
+                      }
+                  }
+                  @media (min-width: 60em) {
+                      &:first-child {
+                          border-radius: 10px 0 0 10px;
+                      }
+                      &:last-child {
+                          border-radius: 0 10px 10px 0;
+                      }
+            }
+          }
+}
+
+// SLIDER 2 PAGINA BUSES
+
+.slider2 {
+    display: grid;
+    grid-template-rows: repeat(5, 15vh);
+    grid-template-columns: repeat(3, 23vw);
+    transition: all $time ease(gravity);
+    background-color: #fdfdfd80;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgb(0 0 0 / 36%);
+    border-radius: 10px;
+    padding: 0.25em;
+    cursor: zoom-in;
+    @media (min-width: 40em) {
+          grid-template-columns: repeat(4, 20vw);
+          grid-template-rows: repeat(4, 20vh);
+    }
+    @media (min-width: 60em) {
+          grid-template-columns: repeat(4, 13vw);
+        //   grid-template-rows: 25vh;
+    }
+              img {
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  left: 0;
+                  top: 0;
+                  transition: all 225ms ease-in-out;
+                  position: relative;
+                  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgb(0 0 0 / 36%);
+                  // opacity: 0.67;
+                  filter: sepia(80%) hue-rotate(180deg);
+                  &:first-child {
+                      border-radius: 10px 10px 0 0;
+                  }
+                  &:last-child {
+                      border-radius: 0 0 10px 10px;
+                  }
+                  &:hover {
+                      opacity: 1;
+                      z-index: 1;
+                      box-shadow: 1em 1em 1em #0004;
+                      transition: all $time ease-in-out;
+                      filter: sepia(0%) hue-rotate(0deg);
+                      border-radius: 5px;
+                      width: 300%;
+                      height: 300%;
+                      left: -100%;
+                      top: -100%;
+                      @media (min-width: 40em) {
+                          width: 250%;
+                          height: 500%;
+                          left: -75%;
+                          top: -200%;
+                      }
+                      @media (min-width: 40em) and (orientation: portrait) {
+                          width: 300%;
+                          height: 300%;
+                          left: -100%;
+                          top: -100%;
+                      }
+                      @media (min-width: 60em) {
+                          width: 350%;
+                          height: 150%;
+                          left: -75%;
+                          top: -25%;
+                              ~ img {
+                                  left: 175%;
+                              }
+                      }
+                      @media (min-width: 60em) and (orientation: landscape) {
+                          width: 300%;
+                          height: 300%;
+                          left: -75%;
+                          top: -100%;
+                              ~ img {
+                                  left: 100%;
+                              }
+                      }
+                  }
+                  @media (min-width: 40em) and (max-width: 59.99em) {
+                      &:first-child {
+                          border-radius: 10px 0 0 0;
+                      }
+                      &:nth-child(5) {
+                          border-radius: 0 10px 0 0;
+                      }
+                      &:nth-child(6) {
+                          border-radius: 0 0 10px 0;
+                      }
+                      &:last-child {
+                          border-radius: 0 0 0 10px;
+                      }
+                  }
+                  @media (min-width: 60em) {
+                      &:first-child {
+                          border-radius: 10px 0 0 10px;
+                      }
+                      &:last-child {
+                          border-radius: 0 10px 10px 0;
+                      }
+            }
+          }
+}

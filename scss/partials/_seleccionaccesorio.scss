@@ -1,0 +1,119 @@
+// Seccion principal y seleccion de accesorio que se quiere ver
+.selecciondeaccesorio{
+  width: 100%;
+}
+
+// Accesorios
+.container{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  @media only screen and (max-width:480px) {
+    flex-direction: column;
+  }
+  @media only screen and (min-width:480px) and (max-width:770px) {
+    width: 100%;;
+  }
+  }
+
+.border{
+  height: 29vh;
+  width: 21vw;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+  &:hover{
+    border: 1px solid white;
+  }
+  @media only screen and (min-width:480px) and (max-width:600px) {
+    height: 29vh;
+    width: 24vw;
+  }
+  @media only screen and (max-width:480px) {
+    height: 16vh;
+    width: 42vw;
+  }
+  a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 1vh 1vw;
+    color: white;
+    &:visited{
+      color: none;
+    }
+    @media only screen and (max-width:480px) {
+      font-size:1em;
+      line-height: 0;
+    }
+    p{
+      background-color:rgba(0, 0, 0, 0.528);
+      &:hover{
+          color: grey;
+      }
+      @media only screen and (max-width:900px) {
+        font-size: 0.7em;
+      }
+    }
+  }
+}
+
+.card{
+  height: 32vh;
+  width: 22vw;
+  background: grey;
+  border-radius: 10px;
+  transition: all 0.8s;
+  overflow: hidden;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgb(0 0 0 / 36%);
+  @media only screen and (min-width:480px) and (max-width:770px) {
+    height: 32vh;
+    width: 31vw;
+  }
+  @media only screen and (max-width:480px) {
+    height: 18vh;
+    width: 48vw;
+  }
+}
+
+.card0{
+  background: url("https://i.ibb.co/V3TtkKz/electricidad.jpg") center center no-repeat;
+  background-size: 300px;
+  &:hover{
+    background: url("https://i.ibb.co/V3TtkKz/electricidad.jpg") right center no-repeat;
+    background-size: 600px;
+  }
+  &:hover p{
+      color: rgb(160, 155, 155);
+      background-color: transparent;
+      margin: 20px;
+      transition: opacity 1s;
+  }
+}
+
+.card1{
+  background: url("https://i.ibb.co/DkXf3BX/cocina.jpg") center center no-repeat;
+  background-size: 300px;
+  &:hover{
+  background: url("https://i.ibb.co/DkXf3BX/cocina.jpg") right center no-repeat;
+  background-size: 600px;
+  }
+  &:hover p{
+    color: rgb(160, 155, 155);
+    background-color:transparent;
+    margin: 20px;
+    transition: opacity 1s;
+  }
+}
+
+
+
+

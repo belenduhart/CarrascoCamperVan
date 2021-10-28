@@ -1,0 +1,8 @@
+@mixin transform($trans){
+    transform: $trans;
+    -webkit-transform: $trans;
+    -moz-transform: $trans;
+    -o-transform: $trans;
+}
+
+

@@ -1,0 +1,49 @@
+// Header y Menu pagina secundaria
+@import "../abstract/transform";
+
+#headerpaginasecundaria{
+    width: 100%;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgb(0 0 0 / 36%);
+}
+.menupaginasecundaria{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgb(0 0 0 / 36%);
+
+            a{
+                text-decoration: none;
+                text-align: center;
+                .imgmenu{
+                    width: 67%;
+                    height: 100%;
+                    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgb(0 0 0 / 36%);
+                    filter: grayscale(50%);   
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    &:hover{
+                        filter: grayscale(0);
+                        @include transform(scale(0.9));
+                        transition: all 700ms ease-in-out;
+                    }
+                    @media only screen and (max-width:780px) {
+                        display: none;
+                    }
+                }
+                .imglogo{
+                    width: 50%;
+                    height: 100%;
+                    &:hover{
+                        @include transform(scale(0.8));
+                        transition: all 700ms ease-in-out;
+                        opacity: 100%;
+                    }
+                    @media only screen and (max-width:780px) {
+                        width: 30%;
+                    }
+                }
+            }
+    }
+

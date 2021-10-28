@@ -1,0 +1,34 @@
+// PAGINA ERROR 404
+.gifcontainer{
+	margin: 16vh 21vw;
+    height: 41vh;
+	display: flex;
+	justify-content: center;
+}
+.gifcontainer img{
+	width: 11vw;
+	margin: 0vh 1vw 0vh 1vw;
+	border-radius: 5%;
+}
+.gifcontainer .gifcara{
+	width: 18vw;
+	border-radius: 60%;
+}
+.p1{
+	font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+	margin-top: -10vh;
+    margin-left: 2vw;
+	line-height: 1;
+}
+.p2{
+	font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 9vh;
+    margin-left: 63vw;
+    text-align: center;
+    line-height: 1;
+}

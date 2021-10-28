@@ -1,0 +1,11 @@
+// Header pagina secundaria
+// Menu pagina secundaria
+@import "../sections/menupaginasecundaria";
+//Titulo de seccion accesorios y seleccion
+@import "../partials/seleccionaccesorio";
+// Seccion electricidad
+@import "../sections/electricidad";
+// Seccion cocina y baño
+@import "../sections/cocinaybanio";
+// Footer igual en todas las paginas
+@import "../sections/footer";

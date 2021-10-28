@@ -1,0 +1,45 @@
+// Header pagina secundaria
+// Menu pagina secundaria
+@import "../sections/menupaginasecundaria";
+// Inicio seccion donde se selecciona el trabajo que se quiere ver
+@import "../sections/seccionprincipalpaginacamionetas";
+// Inicio seccion donde se muestra el trabajo seleccionado
+$time: 500ms;
+
+.bodyslider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4vh auto;
+}
+.contenedorimagenes1{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    .descripcionslider1{
+        font-size: 1.2em;
+        border-radius: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: rgba(61, 37, 15, 0.604);
+        text-align: center;
+        margin: 0vh 4vw 0vh 4vw;
+        padding: 1vw 0vh;
+        @media only screen and (min-width:480px) and (max-width:1080px) {
+            font-size: 0.8em;
+        }
+        @media only screen and (max-width:480px){
+            font-size: 0.8em;
+            margin: 0vh 1vw 0vh 1vw;
+            padding: 0vw 0vh;
+        }
+
+    }
+}
+@import "../partials/slidertrabajos";
+// Footer igual para todas las páginas
+@import "../sections/footer";
+
+
+
+

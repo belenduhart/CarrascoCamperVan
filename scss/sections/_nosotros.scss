@@ -1,0 +1,68 @@
+// Seccion sobre nosotros
+// Titulos
+.tituloscontainer{
+    width: 80%;
+    height: 100%;
+    margin-top:5vh;
+    margin-left: 10vw;
+    img{
+        width: 100%;
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgba(0,0,0,0.36);
+    }
+}
+// Descripcion y foto Agus
+.nosotroscontenidocontainer{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 80%;
+    height: 50%;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgba(0,0,0,0.36);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
+    margin: 5vh auto;
+    @media only screen and (max-width:780px) {
+        flex-direction: column;
+    }
+    @media only screen and (max-width:480px) {
+        margin-top: 1vh;
+    }
+    .nosotrosdescripcion{
+        font-size: 1.1em;
+        width: 60%;
+        font-weight: bold;
+        display: block;
+        padding: 1vh 3vw;
+        text-align: center;
+        @media only screen and (max-width:780px) {
+            font-size: 0.7em;
+            width: 80%;
+        }
+    }
+    img{
+        width: auto;
+        height: 50vh;
+        margin: 5vh 3vw;
+        align-items: center;
+        object-fit: cover;
+        border: 12px solid rgb(114, 77, 57);
+        border-radius: 10%;
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 5px rgba(0,0,0,0.36);
+        animation-duration: 2s;
+        animation-name: slidein1;
+        @keyframes slidein1 {
+            from {
+                opacity: 0%;
+              }
+              to {
+                opacity: 100%;
+              }
+        }
+        @media only screen and (max-width:780px) {
+            margin-top: 0;
+            height: 29vh;
+            width: 47%;
+        }
+    }
+}

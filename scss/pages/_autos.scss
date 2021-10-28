@@ -1,0 +1,10 @@
+// Header pagina secundaria
+// Menu pagina secundaria
+@import "../sections/menupaginasecundaria";
+// Inicio seccion donde se selecciona el trabajo que se quiere ver
+@import "../sections/seccionprincipalpaginaautos";
+// Inicio seccion donde se muestra el trabajo seleccionado
+@import "../partials/slidertrabajos";
+// Footer igual para todas las paginas 
+@import "../sections/footer";
+
